@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --maroon: #800000;
+    --gold: #D4AF37;
+    --cream: #F8F5F0;
+    --charcoal: #2E2E2E;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--cream);
+    color: var(--charcoal);
+    line-height: 1.6;
+}
+
+/* Header + Nav */
+header {
+    background-color: var(--maroon);
+    color: var(--gold);
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+nav a {
+    color: var(--gold);
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--cream);
+}
+
+/* Hero Section */
+.hero {
+    background: url("https://cdn.pixabay.com/photo/2022/07/09/09/52/artificial-intelligence-7308820_1280.jpg") no-repeat center center/cover;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    background-color: rgba(128, 0, 0, 0.8);
+    padding: 2rem 3rem;
+    border-radius: 15px;
+    max-width: 700px;
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 1.2rem;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--gold);
+    color: var(--maroon);
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.cta:hover {
+    background-color: var(--cream);
+}
+
+/* About Page */
+.about {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.about-img {
+    width: 100%;
+    border-radius: 12px;
+    margin: 1.5rem 0;
+}
+
+.testimonial {
+    background-color: var(--cream);
+    padding: 1.5rem;
+    border-left: 5px solid var(--maroon);
+    margin: 2rem 0;
+    font-style: italic;
+}
+
+.founder {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.founder img {
+    width: 150px;
+    border-radius: 50%;
+}
+/* Success Stories Section */
+#success-stories {
+  text-align: center;
+  padding: 80px 20px;
+  background: #fdf9f8;
+  color: #3a1f1f;
+}
+
+#success-stories h2 {
+  font-size: 2.2rem;
+  color: #5c0a0a;
+  margin-bottom: 10px;
+}
+
+#success-stories .intro-text {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #643737;
+}
+
+.stories-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.story-card {
+  background-color: #fff5f5;
+  border: 1px solid #dcb3b3;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(90, 30, 30, 0.15);
+  width: 300px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.story-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(90, 30, 30, 0.25);
+}
+
+.story-card img {
+  width: 100%;
+  border-radius: 15px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.story-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4b2e2e;
+}
+
+.client-name {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #8c1414;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .stories-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .story-card {
+    width: 90%;
+  }
+}
+
+/* Services */
+.services {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.service-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 280px;
+    padding: 1.5rem;
+}
+
+/* Join Form Section */
+#join {
+  background-color: #faf3f2;
+  padding: 60px 20px;
+  color: #3a1f1f;
+  text-align: center;
+}
+
+#join h2 {
+  color: #6b1212;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.form-intro {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #5c3d3d;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(90, 30, 30, 0.2);
+  padding: 40px 30px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #4a2e2e;
+  text-align: left;
+  width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #d1a5a5;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #fffaf9;
+}
+
+fieldset {
+  border: 1px solid #d8b0b0;
+  border-radius: 12px;
+  padding: 15px 20px;
+  width: 100%;
+  background: #fff5f5;
+}
+
+legend {
+  font-weight: bold;
+  color: #711b1b;
+  padding: 0 10px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 8px;
+}
+
+.btn {
+  background-color: #6b1212;
+  color: white;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #8e2020;
+}
+body.thankyou-page {
+  background-color: #f9f3f3;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.thankyou-container {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 60px 40px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+  width: 90%;
+  line height:1.8;
+  animation: fadeIn 0.8s ease;
+}
+.thankyou-container h1{
+colour: #3b0a0a;
+font-size:2rem;
+margin-bottom:20px;
+}
+thankyou-container .btn {
+  display: inline-block;
+  margin-top: 30px; /* Space above the button */
+  padding: 12px 30px;
+  background-color: #3b0a0a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.thankyou-container .btn:hover {
+  background-color: #5c0f0f;
+}
+/* Mobile adjustment for button */
+@media (max-width: 480px) {
+  .thankyou-container .btn {
+    width: 100%; /* Make button full width */
+    padding: 12px 0;
+    font-size: 0.9rem;
+    margin-top: 20px;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  form {
+    padding: 30px 20px;
+  }
+}
+
+/* Footer */
+footer {
+    background-color: var(--maroon);
+    color: var(--gold);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .founder {
+        flex-direction: column;
+    }
+    .service-grid {
+        flex-direction: column;
+    }
+}
